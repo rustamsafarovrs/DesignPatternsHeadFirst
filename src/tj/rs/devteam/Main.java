@@ -1,6 +1,5 @@
 package tj.rs.devteam;
 
-import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -8,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         // write your code here
         Scanner s = new Scanner(System.in);
-        int n = 10;
+        int n;
         System.out.print("input array size: ");
         n = s.nextInt();
         int[] array = new int[n];

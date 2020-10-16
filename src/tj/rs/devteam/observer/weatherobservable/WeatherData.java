@@ -29,9 +29,11 @@ public class WeatherData extends Observable {
     public float getTemperature() {
         return temperature;
     }
+
     public float getHumidity() {
         return humidity;
     }
+
     public float getPressure() {
         return pressure;
     }

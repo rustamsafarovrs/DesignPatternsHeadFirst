@@ -5,5 +5,5 @@ package tj.rs.devteam.observer.weatherobservable;
  * created at 15.10.2020
  */
 public interface DisplayElement {
-    public void display();
+    void display();
 }

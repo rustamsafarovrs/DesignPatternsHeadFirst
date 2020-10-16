@@ -1,8 +1,5 @@
 package tj.rs.devteam.observer.weatherobservable;
 
-import tj.rs.devteam.observer.weather.WeatherStation;
-
-import java.nio.file.Watchable;
 import java.util.Observable;
 import java.util.Observer;
 
@@ -15,8 +12,8 @@ public class ForecastDisplay implements Observer, DisplayElement {
     private float lastPressure;
     private WeatherData weatherData;
 
-    public ForecastDisplay(Observable observable){
-        if(observable instanceof WeatherData){
+    public ForecastDisplay(Observable observable) {
+        if (observable instanceof WeatherData) {
             weatherData = (WeatherData) observable;
             weatherData.addObserver(this);
         }
@@ -25,7 +22,7 @@ public class ForecastDisplay implements Observer, DisplayElement {
     @Override
     public void update(Observable o, Object arg) {
         if (o instanceof WeatherData) {
-            WeatherData weatherData = (WeatherData)o;
+            WeatherData weatherData = (WeatherData) o;
             lastPressure = currentPressure;
             currentPressure = weatherData.getPressure();
             display();

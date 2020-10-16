@@ -5,7 +5,9 @@ package tj.rs.devteam.observer.weather;
  * created at 15.10.2020
  */
 public interface Subject {
-    public void registerObserver(Observer o);
-    public void removeObserver(Observer o);
-    public void notifyObservers();
+    void registerObserver(Observer o);
+
+    void removeObserver(Observer o);
+
+    void notifyObservers();
 }

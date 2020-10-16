@@ -8,15 +8,15 @@ public abstract class Duck {
     FlyBehavior mFlyBehavior;
     QuackBehavior mQuackBehavior;
 
-    public void setFlyBehavior(FlyBehavior fb){
+    public void setFlyBehavior(FlyBehavior fb) {
         mFlyBehavior = fb;
     }
 
-    public void setQuackBehavior(QuackBehavior qb){
+    public void setQuackBehavior(QuackBehavior qb) {
         mQuackBehavior = qb;
     }
 
-    void performQuack(){
+    void performQuack() {
         mQuackBehavior.quack();
     }
 
@@ -26,7 +26,7 @@ public abstract class Duck {
 
     abstract void display();
 
-    void performFly(){
+    void performFly() {
         mFlyBehavior.fly();
     }
 }
