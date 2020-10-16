@@ -1,8 +1,5 @@
 package tj.rs.devteam.observer.weatherobservable;
 
-import javafx.beans.binding.When;
-import tj.rs.devteam.observer.weather.DisplayElement;
-
 import java.util.Observable;
 import java.util.Observer;
 
@@ -10,12 +7,12 @@ import java.util.Observer;
  * @author Rustam Safarov(RS)
  * created at 15.10.2020
  */
-public class CurrentConditionDisplay implements Observer, DisplayElement {
+public class CurrentConditionsDisplay implements Observer, DisplayElement {
     Observable mObservable;
     private float temperature;
     private float humidity;
 
-    public CurrentConditionDisplay(Observable observable) {
+    public CurrentConditionsDisplay(Observable observable) {
         this.mObservable = observable;
         mObservable.addObserver(this);
     }
