@@ -87,7 +87,6 @@ Swing, как и многие GUI-инфраструктуры, широко п�
 
 ## Contributors
 
----
 <a href="https://github.com/rustamsafarovrs/DesignPatternsHeadFirst/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=rustamsafarovrs/DesignPatternsHeadFirst" alt="contributors" />
 </a>
